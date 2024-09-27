@@ -26,8 +26,5 @@ public class AdvanceSearchPage extends Page{
                driver.findElement(By.xpath(propertyTypeLocator)).getText().equals(TYPE_PAGE_TITLE) &
                driver.findElement(By.xpath(searchRadiusLocator)).getText().equals(RADIUS_PAGE_TITLE_LOCATION) &
                driver.findElement(By.xpath(sortLocator)).getText().equals(SORT_PAGE_LOCATOR);
-//TODO if this line is not required then please remoove it
-//        driver.findElement(By.xpath(searchTermLocatorLocation)).getText().equals(LOCATION_PAGE_TITLE_LOCATION);
     }
-
 }

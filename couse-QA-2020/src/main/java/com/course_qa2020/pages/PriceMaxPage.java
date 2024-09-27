@@ -8,7 +8,6 @@ public class PriceMaxPage extends Page{
     private String priceMaxLocator="//div[@class='css-ijwzpf-ButtonWrapper e1tnwg465']//p[contains(text(),'£500k max')]";
     private String LOCATION_PAGE_TITLE_MAX="£500k max";
 
-
     public PriceMaxPage(RemoteWebDriver driver) {
         super(driver);
     }

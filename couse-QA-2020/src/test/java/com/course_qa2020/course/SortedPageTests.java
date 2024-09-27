@@ -29,13 +29,7 @@ public class SortedPageTests extends BaseTest {
         }
         homePage = new HomePage(driver);
     }
-    //TODO sahll be in the BaseTest
-    @AfterMethod(alwaysRun = true)
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+
 
 //   -----------------------------Test 1-----------------------------
 

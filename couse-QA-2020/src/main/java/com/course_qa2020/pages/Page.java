@@ -17,6 +17,7 @@ public abstract class Page {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 30);
     }
+
     //TODO I'd recommend to at least log out exception rather than just returning null as this will help with debugging/same applies to the method below
     protected WebElement getElement(By selector) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
@@ -30,7 +31,6 @@ public abstract class Page {
 
     protected List<WebElement> getElements(By selector) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
-
         try {
             return driver.findElements(selector);
         } catch (Exception ex) {

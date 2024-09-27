@@ -14,5 +14,4 @@ public class PropertyTypePage extends Page{
     public boolean isTitleCorrect(){
         return driver.findElement(By.xpath(propertyTypeLocator)).getText().equals(LOCATION_PAGE_TITLE);
     }
-
 }
